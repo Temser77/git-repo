@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-flex">
+            <div class="header-left">
+                <a class="logo" href="#"><img class="logo-img" src="img/logo.png" alt="logo">BRAN<span class="logo-d">D</span></a>
+                <form class="header-form" action="#">
+                    <select class="browse">
+                        <option value="Browse">Browse</option>
+                        <option value="other">other</option>
+                    </select>
+                    <input class="form-input" type="text" placeholder="Search for Item..."><button type="submit" class="searchbtn"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="header-right">
+                <a href="#"><img src="img/cart.svg" alt="csrt" class="cartbtn"></a>  
+                                
+                <details class="button myaccount-details">
+                   <summary class="myaccount">My Account</summary>
+                   <ul class="myaccount-list">
+                       <li><a href="#" class="myacc-list-a">Lorem</a></li>
+                       <li><a href="#" class="myacc-list-a">Lorem</a></li>
+                       <li><a href="#" class="myacc-list-a">Lorem</a></li>
+                       <li><a href="#" class="myacc-list-a">Lorem</a></li>
+                       <li><a href="#" class="myacc-list-a">Lorem</a></li>
+                   </ul>                    
+                </details>
+
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="menu">
+                <li><a class="menu-link" href="index.html">Home</a></li>
+                <li><a class="menu-link" href="#">Man</a></li>
+                <li><a class="menu-link" href="#">Women</a></li>
+                <li><a class="menu-link" href="#">Kids</a></li>
+                <li><a class="menu-link" href="#">Accoseriese</a></li>
+                <li><a class="menu-link" href="#">Featured</a></li>
+                <li><a class="menu-link" href="#">Hot Deals </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <div class="arrival-wrapper">
+            <div class="new-arrivals-header container">
+                <h1 class="new-arrivals-header-h">NEW ARRIVALS</h1>
+                <nav>
+                    <a href="#" class="tree-nav-a">HOME</a><span class="tree-nav-splitter"> / </span>
+                    <a href="#" class="tree-nav-a">MEN</a><span class="tree-nav-splitter"> / </span>
+                    <a href="#" class="tree-nav-a-selected">NEW ARRIVAL</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="photo-wrapper">
+            <a href="#" class="direction-btn">&lt;</a>
+            <img src="img/photo-big.jpg" alt="" class="photo-big">
+            <a href="#" class="direction-btn">&gt;</a>
+        </div>
+
+        <div class="item-desc-wrapper">
+            <div class="container">
+                <div class="item-desc">
+                    <h4 class="item-desc-h4">WOMEN COLLECTION</h4>
+                    <img src="img/divider.jpg" alt="divider">
+                    <h3 class="item-desc-h3">Moschino Cheap And Chic</h3>
+                    <p class="item-desc-p1">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+                    <div class="item-desc-mat-des">
+                        <p class="item-desc-mat-des-p">MATERIAL:<strong>COTTON</strong></p>
+                        <p class="item-desc-mat-des-p">DESIGNER:<strong>BINBURHAN</strong></p>
+                    </div>
+                    <p class="item-desc-price">$561</p>
+                    <img src="img/line.jpg" alt="line">
+                    <form action="#" class="customer-choice">
+                        <p class="choice-desc">CHOOSE COLOR</p>
+                        <p class="choice-desc">CHOOSE SIZE</p>
+                        <p class="choice-desc">QUANTITY</p>
+
+                        <!-- не отображается картинка цвета перед названием цвета в выпадающем списке. Как сделать? -->
+
+                        <select name="slct-color" id="slct-color" class="choice-select">
+                            <option value="red"><img src="img/color-red.jpg" alt="red"><span>RED</span></option>
+                            <option value="blue"><img src="img/color-green.jpg" alt="red"><span>GREEN</span></option>
+                            <option value="green"><img src="img/color-blue.jpg" alt="red"><span>BLUE</span></option>
+                        </select>
+                        <select name="slct-size" id="slct-size" class="choice-select">
+                            <option value="1">XS</option>
+                            <option value="2">S</option>
+                            <option value="3">M</option>
+                            <option value="3">L</option>
+                            <option value="3">XL</option>
+                            <option value="3">XXL</option>
+                        </select>
+                        <input type="number" class="choice-select" step="1" placeholder="1">
+                        <input type="submit" class="submit-btn" value="Add to cart">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container maylike">
+            <h3 class="maylike-h">YOU MAY LIKE ALSO</h3>
+
+            <div class="maylike-items">
+
+                <div class="featured-item">
+                    <a href="singlepage.html" class="featured-item-link">
+                        <div class="image-center"><img src="img/maylike1.png" alt="maylike1"></div>
+                        <h5 class="ftd-item-desc">BLAZE LEGGINGS</h5>
+                        <p class="ftd-item-price">$52.00</p>
+                    </a>
+                    <a href="https://geekbrains.ru" class="featured-item-hover">
+                        <p class="add-to-cart"><img src="img/cart-white.svg" alt="cart" class="add-to-cart-img"><span>Add to cart</span></p>
+                    </a>
+                </div>
+
+                <div class="featured-item">
+                    <a href="singlepage.html" class="featured-item-link">
+                        <div class="image-center"><img src="img/maylike2.png" alt="maylike2"></div>
+                        <h5 class="ftd-item-desc">ALEXA SWEATER</h5>
+                        <p class="ftd-item-price">$52.00</p>
+                    </a>
+                    <a href="https://geekbrains.ru" class="featured-item-hover">
+                        <p class="add-to-cart"><img src="img/cart-white.svg" alt="cart" class="add-to-cart-img"><span>Add to cart</span></p>
+                    </a>
+                </div>
+
+                <div class="featured-item">
+                    <a href="singlepage.html" class="featured-item-link">
+                        <div class="image-center"><img src="img/maylike3.png" alt="maylike3"></div>
+                        <h5 class="ftd-item-desc">AGNES TOP</h5>
+                        <p class="ftd-item-price">$52.00</p>
+                    </a>
+                    <a href="https://geekbrains.ru" class="featured-item-hover">
+                        <p class="add-to-cart"><img src="img/cart-white.svg" alt="cart" class="add-to-cart-img"><span>Add to cart</span></p>
+                    </a>
+                </div>
+
+                <div class="featured-item">
+                    <a href="singlepage.html" class="featured-item-link">
+                        <div class="image-center"><img src="img/maylike4.jpg" alt="maylike4"></div>
+                        <h5 class="ftd-item-desc">SYLVA SWEATER</h5>
+                        <p class="ftd-item-price">$52.00</p>
+                    </a>
+                    <a href="https://geekbrains.ru" class="featured-item-hover">
+                        <p class="add-to-cart"><img src="img/cart-white.svg" alt="cart" class="add-to-cart-img"><span>Add to cart</span></p>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="banner3">
+        <div class="container banner3-block">
+            <div class="banner3-left">
+                <img src="img/avatar.png" alt="avatar" class="banner3-left-img">
+                <p class="banner3-left-p1">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                <p class="banner3-left-p2">Bin Burhan</p>
+                <p class="banner3-left-p3">Dhaka, Bd</p>
+                <a href="#" class="banner3-left-carouselbtn"></a>
+                <a href="#" class="banner3-left-carouselbtn2"></a>
+                <a href="#" class="banner3-left-carouselbtn"></a>
+            </div>
+
+            <div class="banner3-right">
+                <h3 class="banner3-right-h3">SUBCRIBE</h3>
+                <h4 class="banner3-right-h4">FOR OUR NEWLETTER AND PROMOTION</h4>
+                <form action="#" class="subscribe-form">
+                    <input class="banner-form-input" type="email" placeholder="Enter Your Email"><button type="submit" class="subscribe-btn">Subcribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="prefooter container">
+            <div class="prefooter-block1">
+                <a class="logo" href="#"><img class="logo-img" src="img/logo.png" alt="logo">BRAN<span class="logo-d">D</span></a>
+                <p class="prefooter-block1-text">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. <br><br>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                </p>
+            </div>
+            <div class="prefooter-block2">
+                <h3 class="prefooter-h">COMPANY</h3>
+                <a href="index.html" class="prefooter-a">Home</a>
+                <a href="#" class="prefooter-a">Shop</a>
+                <a href="#" class="prefooter-a">About</a>
+                <a href="#" class="prefooter-a">How It Works</a>
+                <a href="#" class="prefooter-a">Contact</a>
+            </div>
+            <div class="prefooter-block2">
+                <h3 class="prefooter-h">INFORMATION</h3>
+                <a href="#" class="prefooter-a">Terms &amp; Conditions</a>
+                <a href="#" class="prefooter-a">Privacy Policy</a>
+                <a href="#" class="prefooter-a">How to Buy</a>
+                <a href="#" class="prefooter-a">How to Sell</a>
+                <a href="#" class="prefooter-a">Promotion</a>
+
+            </div>
+            <div class="prefooter-block2">
+                <h3 class="prefooter-h">SHOP CATEGORY</h3>
+                <a href="#" class="prefooter-a">Men</a>
+                <a href="#" class="prefooter-a">Women</a>
+                <a href="#" class="prefooter-a">Child</a>
+                <a href="#" class="prefooter-a">Apparel</a>
+                <a href="#" class="prefooter-a">Browse All</a>
+            </div>
+        </div>
+
+        <div class="footer-wrap">
+            <div class="container footer">
+                <span class="footer-span">&copy; 2017 Brand All Rights Reserved.</span>
+                <div class="social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
